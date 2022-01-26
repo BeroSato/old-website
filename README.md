@@ -7,4 +7,6 @@ This is a collection of old versions of my website I found on my hard drive.
 
 2. Extract it.
 
+(if you have used git you don't need to)
+
 3. Open the html file from the version you want to try with your browser.
