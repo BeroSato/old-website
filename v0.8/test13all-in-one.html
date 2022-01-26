@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description" content="Bero Sato's official website, take a look at my projects!">
+    <meta name="Keywords" content="Bero Sato, bero sato">
+    <title>Bero Sato's website prerelease</title>
+    <link rel="shortcut icon" href="websiteicon.png" type="image/x-icon">
+    <style>
+        * {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+   }
+   
+  ::-webkit-scrollbar-track {
+    border: 3px solid rgb(61, 61, 61);
+    border-radius: 5px;
+    }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 179, 179);
+    border-radius: 5px;
+  }
+   
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(158, 106, 106);
+    box-shadow: 0 3px 10px black;
+    }
+
+html {
+    scrollbar-color: rgb(255, 179, 179) rgb(255, 235, 235);
+    scrollbar-width: 10px;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(255, 126, 126);
+    border-radius: 5px;
+    padding: 30px 0;
+    animation: headeranimation 5s 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+    background-image: url(background3.2.png);
+}
+
+.alink {
+    color: #ec1c24;
+    text-decoration: none;
+    padding: 1px;
+    font-size: 24px;
+    border: 3px solid rgb(255, 85, 85);
+    background-color: rgb(255, 226, 226);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.alink:hover {
+    border: 3px solid brown;
+    font-size: 31px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(206, 97, 97);
+    color: white;
+}
+
+footer {
+    background-color: lightcoral;
+    padding: 30px 0;
+    border-radius: 5px;
+    text-shadow: 3px 3px 7px #2b2b2b;
+}
+
+#link1 {
+    text-shadow: 0 0 0;
+    color: black;
+    display: block;
+    border: 3px solid rgb(255, 85, 85);
+    background-color: rgb(255, 149, 149);
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#link1:hover {
+    font-size: 30px;
+    color: white;
+    background-color: rgb(206, 97, 97);
+    border: 3px solid brown;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article1 {
+    background-color: blanchedalmond;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-image: url(welcome.png);
+    background-repeat: no-repeat;
+}
+
+.article2 {
+    background-color: cadetblue;
+    background-image: url(qna.png);
+    background-repeat: no-repeat;
+    padding: 3px 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.article3 {
+    background-color: crimson;
+    background-image: url(projects.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    text-align: left;
+    padding: 3px 0;
+    margin-bottom: 15px;
+}
+
+.article4 {
+    background-color: steelblue;
+    background-image: url(about.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 3px 0;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 25px;
+}
+
+p {
+    text-align: left;
+    padding-left: 25px;
+}
+
+li {
+    text-align: left;
+}
+
+mark {
+    text-align: left;
+    background-color: black;
+    color: steelblue;
+}
+
+details {
+    margin-bottom: 15px;
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+summary {
+    text-align: left;
+    padding-left: 25px;
+    padding-bottom: 19px;
+    padding-top: 15px;
+}
+
+@keyframes headeranimation {
+    0% {border-radius: 5px;}
+    50% {border-radius: 10px;}
+    100% {border-radius: 5px;}
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #2b2b2b;
+        color: white;
+    }
+
+    header {
+        background-image: url(background3.png);
+    }
+
+    .article1 {
+        background-color: rgb(189, 175, 152);
+    }
+
+    .article3 {
+        background-color: rgb(190, 70, 94);
+    }
+
+    #link1 {
+        color: white;
+        background-color: rgb(216, 117, 117);
+        border: 3px solid rgb(255, 166, 166);
+    }
+
+    #link1:hover {
+        color: black;
+    }
+
+    footer {
+        background-color: rgb(194, 104, 104);
+    }
+
+    .alink {
+        background-color: rgb(83, 45, 45);
+    }
+
+    .alink:hover {
+        color: black;
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 3px solid rgb(204, 204, 204);
+        border-radius: 5px;
+        }
+    
+    html {
+        scrollbar-color: rgb(255, 179, 179) rgb(82, 62, 62);
+    }
+}
+    </style>
+</head>
+<body>
+    <!--This is the start of the full website test with HTML and CSS!-->
+    <header>
+        <picture>
+            <source media="(max-width: 500px)" srcset="logo2.png">
+            <img src="logotest.png" alt="Bero Sato">
+        </picture>
+        <br>
+        <a class="alink" href="#home">Home</a>
+        <a class="alink" href="#qna">QnA</a>
+        <a class="alink" href="#projects">Projects</a>
+        <a class="alink" href="#about">About</a>
+    </header>
+    <main>
+        <section>
+            <article class="article1" id="home">
+                <h2>Welcome to my website!</h2>
+                <p>Here you can find some stuff about me.</p>
+            </article>
+            <article class="article2" id="qna">
+                <h2>Who are you?</h2>
+                <p>I'm Bero, my real name is omar and I like some tech stuff and exploring them.
+                 I also love reading manga and watching some animes and I'm a fan of HTC :) </p>
+                 <h2>Why is this exists?</h2>
+                 <p>I made this website for testing what I have learned of HTML and CSS.</p>
+                 <h2>How many programming languages you know?</h2>
+                 <p>HTML (not a programming language but still counts), CSS and currently learning C#</p>
+                 <h2>What projects are you planning to do?</h2>
+                 <p>I'm planning to make a UWP app and a Unity Engine game with C#</p>
+            </article>
+            <article class="article3" id="projects">
+                <h2>list of my projects:</h2>
+                <ol>
+                    <li>a simple UWP app</li>
+                    <li>the <b>Kart Racing</b> game</li>
+                    <li><del>private</del></li>
+                </ol>
+            </article>
+            <details>
+                <summary>About this website</summary>
+                <article class="article4" id="about">
+                    <strong>Version: 0.8_Pre-release</strong>
+                    <br>
+                    <em>modifed in 1/18/2022</em>
+                </article>
+            </details>
+        </section>
+    </main>
+    <footer>
+        Developed and Designed by Bero Sato © 2022
+        <br>
+        <br>
+        <a id="link1" target="_blank" href="https://youtube.com/c/BeroSato">Youtube</a>
+        <a id="link1" target="_blank" href="https://twitter.com/Bero_Sato">Twitter</a>
+    </footer>
+</body>
+</html>

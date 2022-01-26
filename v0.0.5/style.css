@@ -1,0 +1,16 @@
+html {
+    background-color:lightcoral;
+    color:azure;
+    font-size: 60px;
+}
+p {
+    font-size: 60px;
+}
+mark {
+    background-color: azure;
+    color: lightcoral;
+}
+/* a {
+    color: azure;
+    font-size: 50px;
+} */

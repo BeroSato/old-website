@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float test</title>
+    <style>
+        * {
+            text-align: center;
+            font-size: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        aside,
+        main {
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline;
+            border: 3px solid rgb(255, 85, 85);
+            border-radius: 5px;
+            color: lightcyan;
+            background-color: rgb(255, 149, 149);
+        }
+
+        a:hover {
+            background-color: rgb(206, 97, 97);
+            border: 3px solid brown;
+        }
+
+        aside {
+            background-color: chocolate;
+            width: 25%;
+            height: 500px;
+            margin-right: 15px;
+        }
+
+        main {
+            background-color: rgb(44, 44, 44);
+            width: 70%;
+            height: 500px;
+            color: white;
+            align-items: center;
+        }
+
+        footer,
+        header {
+            background-color: rgb(255, 126, 126);
+            padding: 30px 0;
+            color: white;
+        }
+
+        section {
+            border: 2px solid cornflowerblue;
+            border-left: 10px solid cornflowerblue;
+            height: 350px;
+            width: 95%;
+            overflow: auto;
+        }
+
+        .helloworld {
+            border: 2px solid rgb(0, 60, 170);
+            border-left: 10px solid rgb(0, 60, 170);
+            width: 40%;
+            height: 30%;
+        }
+
+        h1 {
+            background-color: rosybrown;
+            color: white;
+            padding: 30px;
+            width: 40%;
+            float: right;
+            border-radius: 10px 0 0 10px;
+        }
+
+        img {
+            width: 360px;
+            height: 60%;
+        }
+
+        #ha {
+            color: cadetblue;
+        }
+
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>hello world
+        <br />
+        <br />
+        <a target="_blank" href="https://google.com">Home</a>
+        <a target="_blank" href="https://twitter.com">QnA</a>
+        <a target="_blank" href="https://twitter.com/Bero_Sato">Contact</a>
+        <a target="_blank" href="https://youtube.com/c/BeroSato">About</a>
+    </header>
+    <aside>side bar
+        <h4>some html files (and ads :))</h4>
+    </aside>
+    <main>main content
+        <h4>A "Hello, World!" program is generally a computer program that outputs or displays the message "Hello,
+            World!". This program is very simple to write in many programming languages,
+            and is often used to illustrate a language's basic syntax. "Hello, World!" programs are often the first a
+            student learns to write in a given language,
+            and they can also be used as a sanity test to ensure computer software intended to compile or run source
+            code is correctly installed, and that its operator understands how to use it.</h4>
+    </main>
+    <section>
+        <img src="background2.png" alt="cannot show img, please make sure about your internet connection.">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique possimus recusandae pariatur
+            earum. Quidem corporis quisquam labore architecto laudantium repellat alias blanditiis consequatur. Dolores
+            assumenda qui autem dolore accusamus.</p>
+    </section>
+    <section class="helloworld">
+        <h1>aaaaa</h1>
+        <h1>aaaaaa</h1>
+    </section>
+    <h4 id="ha">idk</h4>
+    <footer>Developed by Bero Sato © 2022</footer>
+</body>
+
+</html>

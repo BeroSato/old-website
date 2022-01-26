@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float test</title>
+    <style>
+        * {
+            text-align: center;
+            font-size: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        aside,
+        main {
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline;
+            border: 3px solid rgb(255, 85, 85);
+            border-radius: 6px;
+            color: white;
+            background-color: rgb(255, 149, 149);
+            font-size: 21px;
+            padding: 3px;
+            text-shadow: 0 0 0;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            background-color: rgb(206, 97, 97);
+            border: 3px solid brown;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        a:focus {
+            border: 3px solid green;
+        }
+
+        .home {
+            border: 3px solid #b40007;
+        }
+
+        aside {
+            background-color: chocolate;
+            width: 25%;
+            height: 500px;
+            padding-top: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            color: white;
+        }
+
+        main {
+            background-color: rgb(44, 44, 44);
+            width: 73%;
+            height: 500px;
+            color: white;
+            padding-top: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-right: 25px;
+        }
+
+        footer,
+        header {
+            background-color: rgb(255, 126, 126);
+            padding: 30px 0;
+            color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-shadow: 3px 3px 7px #2b2b2b;
+        }
+
+        section {
+            border: 2px solid rgb(197, 197, 197);
+            border-left: 5px solid rgb(197, 197, 197);
+            height: 350px;
+            width: 96%;
+            overflow: auto;
+        }
+
+        .helloworld {
+            border: 2px solid rgb(197, 197, 197);
+            border-left: 5px solid rgb(197, 197, 197);
+            width: 40%;
+            height: 30%;
+        }
+
+        h1 {
+            background-color: rosybrown;
+            color: white;
+            padding: 30px;
+            width: 40%;
+            float: right;
+            border-radius: 10px 0 0 10px;
+        }
+
+        h6 {
+            font-size: 30px;
+        }
+
+        img {
+            width: 300px;
+            height: 60%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #ha {
+            color: cadetblue;
+        }
+
+        footer {
+            clear: both;
+            text-shadow: 3px 3px 7px #2b2b2b;
+        }
+
+        input {
+            border: 3px solid rgb(255, 85, 85);
+            border-radius: 6px;
+            color: white;
+            font-size: 22px;
+            background-color: rgb(255, 149, 149);
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        input:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: rgb(206, 97, 97);
+            border: 3px solid brown;
+        }
+
+        input:focus {
+            border: 3px solid green;
+        }
+
+        select {
+            border-radius: 4px;
+            border: 3px solid rgb(255, 85, 85);
+            border-radius: 6px;
+            color: white;
+            font-size: 22px;
+            background-color: rgb(255, 149, 149);
+            transition: all 0.2s;
+        }
+
+        select:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: rgb(206, 97, 97);
+            border: 3px solid brown;
+        }
+
+        select:focus {
+            border: 3px solid green;
+        }
+
+        form {
+            background-color: rgb(255, 126, 126);
+            color: white;
+            font-size: 10px;
+            margin: 20px 0;
+        }
+
+        legend {
+            background-color: rgb(255, 126, 126);
+            color: white;
+            text-align: left;
+            margin-left: 17px;
+        }
+
+        label {
+            font-size 20px;
+        }
+
+        details {
+            background-color: rgb(255, 126, 126);
+            margin-top: 10px;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #em {
+            background-color: #ffeaea;
+        }
+
+        #pass {
+            background-color: #ffeaea;
+        }
+
+        #em:hover {
+            background-color: white;
+        }
+
+        #pass:hover {
+            background-color: white;
+        }
+
+        summary {
+            transition: all 0.2s;
+        }
+
+        summary:hover {
+            background-color: rgb(206, 97, 97);
+        }
+
+        summary:focus {
+            border: 3px solid green;
+        }
+
+        @media (max-width: 1000px) {
+            aside {
+                width: 100%;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            h6 {
+                font-size: 20px;
+            }
+        }
+
+        option {
+            background-color: rgb(255, 149, 149);
+            color: white;
+            font-size: 20px;
+        }
+
+        #input2 {
+            background-color: #ffeaea;
+            color: black;
+        }
+
+        #input2:hover {
+            background-color: white;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            * {
+                background-color: rgb(37, 37, 37);
+                color: white;
+            }
+
+            header,
+            footer,
+            aside,
+            main {
+                background-color: rgb(37, 37, 37);
+            }
+
+            a {
+                background-color: rgb(44, 44, 44);
+                border: 3px solid black;
+            }
+
+            a:hover {
+                background-color: rgb(77, 77, 77);
+                ;
+            }
+
+            details {
+                background-color: rgb(37, 37, 37);
+            }
+
+            summary:hover {
+                background-color: rgb(59, 59, 59);
+            }
+
+            input {
+                background-color: rgb(44, 44, 44);
+                border: 3px solid black;
+            }
+
+            section {
+                border: 2px solid black;
+                border-left: 5px solid black;
+            }
+
+            .helloworld {
+                border: 2px solid black;
+                border-left: 5px solid black;
+            }
+
+            #input2 {
+                background-color: rgb(44, 44, 44);
+                color: white;
+            }
+
+            #em {
+                background-color: rgb(44, 44, 44);
+                color: white;
+            }
+
+            #pass {
+                background-color: rgb(44, 44, 44);
+                color: white;
+            }
+
+            input:hover {
+                background-color: rgb(77, 77, 77);
+            }
+
+            #input2:hover {
+                background-color: rgb(77, 77, 77);
+            }
+
+            #em:hover {
+                background-color: rgb(77, 77, 77);
+            }
+
+            #pass:hover {
+                background-color: rgb(77, 77, 77);
+            }
+
+            select {
+                background-color: rgb(37, 37, 37);
+                ;
+                border: 3px solid black;
+            }
+
+            select:hover {
+                background-color: rgb(77, 77, 77);
+                ;
+            }
+
+            legend {
+                background-color: rgb(37, 37, 37);
+            }
+
+            form {
+                background-color: rgb(37, 37, 37);
+            }
+
+            option {
+                background-color: rgb(37, 37, 37);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <details>
+        <summary>Log in</summary>
+        <label for="browsers">Choose your browser:</label>
+        <select id="browsers">
+            <option value="Edge">Edge</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Opera">Opera</option>
+            <option value="Other">Other</option>
+        </select>
+        <legend>Welcome!</legend>
+        <form>
+            <label for="em">Enter your email:</label>
+            <input id="em" type="email">
+            <br />
+            <label for="pass">Enter your password:</label>
+            <input id="pass" type="password">
+            <br>
+            <input type="submit" value="Sign in">
+            <input type="submit" value="Sign up">
+        </form>
+    </details>
+    <header>hello world
+        <br>
+        <input id="input2" type="search">
+        <br>
+        <a class="home" target="_blank" href="https://google.com">Home</a>
+        <a target="_blank" href="https://twitter.com">QnA</a>
+        <a target="_blank" href="https://twitter.com/Bero_Sato">Contact</a>
+        <a target="_blank" href="https://youtube.com/c/BeroSato">About</a>
+    </header>
+    <main>main content
+        <h6>A "Hello, World!" program is generally a computer program that outputs or displays the message "Hello,
+            World!". This program is very simple to write in many programming languages, <br>
+            and is often used to illustrate a language's basic syntax. "Hello, World!" programs are often the first a
+            student learns to write in a given language,
+            and they can also be used as a sanity test to ensure computer software intended to compile or run source
+            code is correctly installed, and that its operator understands how to use it.</h6>
+    </main>
+    <aside>side bar <br>
+        <h6>some files for the article here:</h6>
+    </aside>
+    <section>
+        <img src="background2.png"
+            alt="cannot show the image, please make sure that you are connected to your internet.">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique possimus recusandae pariatur
+            earum. Quidem corporis quisquam labore architecto laudantium repellat alias blanditiis consequatur. Dolores
+            assumenda qui autem dolore accusamus.</p>
+    </section>
+    <section class="helloworld">
+        <h1>aaaaa</h1>
+        <h1>aaaaaa</h1>
+    </section>
+    <h4 id="ha">idk</h4>
+    <footer>Developed by Bero Sato © 2022</footer>
+</body>
+
+</html>
