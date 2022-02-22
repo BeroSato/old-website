@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bero Sato's Classic Style Website">
+    <title>Bero Sato's Website</title>
+    <link rel="shortcut icon" href="images/websiteicon.png" type="image/x-icon">
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+   
+        ::-webkit-scrollbar-track {
+            background-color: rgb(238, 226, 226);
+            border: 2px solid rgb(211, 191, 191);
+        }
+   
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 179, 179);
+            border: 3px double rgb(201, 140, 140);
+        }
+
+        html {
+            scrollbar-color: rgb(255, 179, 179) rgb(255, 235, 235);
+            scrollbar-width: 10px;
+            background-image: url(images/background3.2.jpg);
+        }
+
+        header {
+            color: #ec1c24;
+            background-color: #f3ebeb;
+            background-image: linear-gradient(to right, #f3ebeb, #faf6f6);
+            border: 2px solid rgba(224, 208, 208, 0.5);
+            padding-left: 35px;
+            padding-top: 12px;
+            padding-bottom: 30px;
+            box-shadow: 3px 3px rgb(90, 87, 87);
+        }
+
+        a {
+            color: #ec1c24;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer a {
+            color: rgb(51, 43, 43);
+        }
+
+        footer a:hover {
+            color: rgb(138, 94, 94);
+        }
+
+        sup {
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #f3ebeb;
+            border: 2px solid rgba(224, 208, 208, 0.5);
+            padding-left: 30px;
+            padding-top: 1px;
+            padding-bottom: 20px;
+            box-shadow: 3px 3px rgb(90, 87, 87);
+            text-align: center;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        em {
+            font-size: 20px;
+        }
+
+        .article1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            background-color: rgb(226, 218, 207);
+            border: 3px double rgb(139, 133, 124);
+            color: rgb(63, 60, 52);
+            padding-bottom: 5px;
+        }
+
+        .article2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            background-color: rgb(174, 198, 199);
+            border: 3px double rgb(107, 124, 124);
+            color: rgb(36, 43, 43);
+            padding-bottom: 5px;
+        }
+
+        .article3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            background-color: rgb(212, 174, 174);
+            border: 3px double rgb(109, 90, 90);
+            color: rgb(48, 40, 40);
+            padding-bottom: 5px;
+        }
+
+        .article4 {
+            background-color: #c9b39a;
+            color: #2e2926;
+            padding-left: 20px;
+            border: 3px double #6e6254;
+            margin-bottom: 10px;
+        }
+
+        .vidlink {
+            padding-bottom: 4px;
+            display: block;
+            color: #2e2926;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        .vidlink:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #vidlink4 {
+            margin-bottom: 15px;
+        }
+
+        .article5 {
+            background-color: #9ac9c9;
+            color: #2d3636;
+            padding-left: 20px;
+            border: 3px double #587272;
+            margin-bottom: 10px;
+        }
+
+        .tweetlink {
+            padding-bottom: 4px;
+            display: block;
+            color: #2d3636;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        .tweetlink:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #tweetlink4 {
+            margin-bottom: 15px;
+        }
+
+        .article6 {
+            color: rgb(49, 55, 61);
+            background-color: rgb(175, 203, 226);
+            border: 3px double rgb(110, 128, 143);
+            padding-left: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+
+        #name1 {
+            color: #ec1c24;
+        }
+
+        #logo1 {
+            cursor: default;
+        }
+
+        .navbar {
+            cursor: default;
+        }
+
+        .footernav {
+            cursor: default;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html {
+                background-image: url(images/background3.jpg);
+                scrollbar-color: rgb(255, 179, 179) rgb(82, 62, 62);
+            }
+
+            header {
+                background-image: linear-gradient(to right, #3b3232, #1f1d1d);
+                border: 2px solid rgba(82, 67, 67, 0.5);
+                box-shadow: 3px 3px rgb(0, 0, 0);
+            }
+
+            .article1 {
+                color: rgb(226, 212, 196);
+                background-color: rgb(87, 80, 71);
+                border: 3px double rgb(124, 114, 101);
+            }
+
+            .article2 {
+                color: rgb(181, 209, 209);
+                background-color: rgb(56, 66, 66);
+                border: 3px double rgb(85, 100, 100);
+            }
+
+            .article3 {
+                color: rgb(221, 195, 195);
+                background-color: rgb(78, 57, 57);
+                border: 3px double rgb(116, 84, 84);
+            }
+
+            .article4 {
+                background-color: #504539;
+                color: #ddd0c1;
+                border: 3px double #776858;
+            }
+
+            .vidlink {
+                color: #ddd0c1;
+            }
+
+            .vidlink:hover {
+                color: black;
+            }
+
+            .article5 {
+                background-color: #304646;
+                color: #b7d6d6;
+                border: 3px double #4f7272;
+            }
+
+            .tweetlink {
+                color: #b7d6d6;
+            }
+
+            .tweetlink:hover {
+                color: black;
+            }
+
+            .article6 {
+                color: rgb(199, 208, 219);
+                background-color: rgb(67, 85, 100);
+                border: 3px double rgb(105, 127, 148);
+            }
+
+            footer {
+                background-color: #3b3232;
+                border: 2px solid rgba(82, 67, 67, 0.5);
+                box-shadow: 3px 3px rgb(0, 0, 0);
+                color: white;
+            }
+
+            footer a {
+                color: rgb(240, 230, 230);
+            }
+
+            footer a:hover {
+                color: rgb(167, 123, 123);
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: rgb(179, 114, 114);
+            }
+
+            ::-webkit-scrollbar-track {
+                background-color: rgb(51, 41, 41);
+                border: 2px solid rgb(95, 89, 89);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo1">Bero Sato <sup>Classic</sup></h1>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="https://berosato.github.io/blogs">Blogs</a>
+            <a href="#plans">Plans</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
+    <section>
+        <article class="article1" id="home">
+            <h2>Welcome to my website!</h2>
+            <p>I'm Bero Sato and i'm a normal person who loves nerding.</p>
+        </article>
+        <article class="article2" id="qna">
+            <h2>Who are you?</h2>
+            <p>I'm Bero, my real name is omar and I like some tech stuff and trying to explore them.
+             I also love reading manga and watching some animes and I'm a huge fan of HTC :) </p>
+             <h2>Why is this exists?</h2>
+             <p>I have made this website for fun, trying HTML and CSS.</p>
+             <h2>How many programming languages do you know?</h2>
+             <p>HTML (not a programming language but still counts), CSS and currently learning JavaScript and C#</p>
+             <h2>What projects are you planning to do?</h2>
+             <p>I'm planning to make a simple UWP app and a Unity Engine game with C#</p>
+        </article>
+        <article class="article3" id="plans">
+            <h2>List of my plans:</h2>
+            <ol>
+                <li>A simple UWP app</li>
+                <li>The <b>Kart Racing</b> game</li>
+                <li><del>private</del></li>
+            </ol>
+        </article>
+        <article class="article4">
+            <h2>Latest 4 videos:</h2>
+            <a class="vidlink" href="https://youtu.be/fUp3MXwbonM">Windows 7 in 2022</a>
+            <a class="vidlink" href="https://youtu.be/_Jx1tMnM1qo">Windows 11 with 500% scaling</a>
+            <a class="vidlink" href="https://youtu.be/wQ82H3IhKwo">Let's take a look at the first Enterprise LTSB of Windows 10 (LTSB 2015)</a>
+            <a class="vidlink" id="vidlink4" href="https://youtu.be/ZLlhzmmPurk">Windows Vista in 2021</a>
+        </article>
+        <article class="article5">
+            <h2>Latest 4 tweets:</h2>
+            <a class="tweetlink" href="https://twitter.com/Bero_Sato/status/1492081271870300206">Just joined the @windowsinsider beta channel!</a>
+            <a class="tweetlink" href="https://twitter.com/Bero_Sato/status/1490292235300229124">Had fun with Windows 10X today ...</a>
+            <a class="tweetlink" href="https://twitter.com/Bero_Sato/status/1489309089834360832">Looks like those computer stores are still using Windows 11 Build 22000.9 :/</a>
+            <a class="tweetlink" id="tweetlink4" href="https://twitter.com/Bero_Sato/status/1488212520276004873">that's why I didn't add the mobile menu in the header ...</a>
+        </article>
+        <article class="article6" id="about">
+            <h2>About this website:</h2>
+            <p>Made with HTML and CSS</p>
+            <p>Version: 2.1</p>
+            <p>This website is made for fun.</p>
+            <em>modifed in 2/15/2022</em>
+        </article>
+    </section>
+    <footer>
+        <h4>Developed and designed by <strong id="name1">Bero Sato</strong> © 2022</h4>
+        <div class="footernav">
+            <a href="https://youtube.com/c/BeroSato">YouTube</a>
+            <a href="https://twitter.com/Bero_Sato">Twitter</a>
+            <a href="https://github.com/BeroSato">GitHub</a>
+            <a href="https://github.com/BeroSato/berosato.github.io">Source Code</a>
+        </div>
+    </footer>
+</body>
+</html>
